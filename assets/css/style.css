@@ -24,6 +24,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 /* navigation links */
@@ -56,7 +57,7 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -73,14 +74,12 @@ h1, h2 {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../css/images/hero-image.webp') no-repeat center center;
+    background: url('images/hero-image.webp') no-repeat center center;
 
-
-/* animates zoom effect on loading page */
+    /* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-
 }
 
 /* creates the level of zoom for hero image */
@@ -113,7 +112,6 @@ h1, h2 {
     position: absolute;
 }
 
-
 /* club ethos */
 
 #club-ethos {
@@ -124,20 +122,17 @@ h1, h2 {
     padding-top: 30px;
     width: 33%;
     float: left;
-    
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-   
 }
 
 #center-about {
     width: 33%;
     margin: 0 auto;
-   
 }
 
 hr {
@@ -162,50 +157,46 @@ hr {
     margin-bottom: 50px;
 }
 
-.right-about-heading p {
-    text-align: left;
-
-}
 .right-about-heading h2 {
     text-align: right;
+}
 
+.right-about-heading p {
+    text-align: right;
 }
 
 #welcome {
     text-align: center;
-    margin: 50px 0;
-    font-size: 220%;
+    margin: 20px 0;
+    font-size: 280%;
 }
 
 #circle-container {
-    height: 300px;
     width: 300px;
-    padding: 50px;
+    height: 300px;
+    padding: 30px;
     border-style: solid;
     border-color: #ccc;
-    border-width: 1px ;
+    border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
-
 }
 
-#circle-container-bg {
-    background: url(../css/images/ethos-center-image.jpg) no-repeat center center;
+#circle-cover-bg {
+    background: url('images/ethos-center-image.jpg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
-
 /* event times */
 
 #times {
-    background-image: url(../css/images/dublin-city.webp);
+    background-image: url('../images/times-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
     width: 100%;
-
+    overflow: hidden;
 }
 
 #times div {
@@ -226,7 +217,6 @@ hr {
 
 /* footer */
 
-
 footer {
     height: 150px;
 }
@@ -246,7 +236,7 @@ footer {
     color: #3a3a3a;
 }
 
-/* Gallery */
+/* gallery */
 
 #photos {
     clear: both;
@@ -257,7 +247,6 @@ footer {
 
 #photos > img {
     width: 100%;
-
 }
 
 /* Media queries */
@@ -268,14 +257,6 @@ footer {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
-    }
-
-    #times > div {
-
-        width: 100%;
-        clear: both;
-        height: 150px;
-        padding: 0;
     }
 
     #welcome {
@@ -293,6 +274,13 @@ footer {
         clear: both;
         width: 100%;
         float: left;
+        padding: 0;
+    }
+
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
         padding: 0;
     }
 
@@ -335,18 +323,11 @@ footer {
         text-align: center;
         padding: 0 20px;
     }
-    #photos {
-        column-count: 3;
-    }
 }
 
-/* for small screen sizes 800px and below*/
+/* For small screen sizes below 800px width */
 @media screen and (max-width: 800px) {
     #photos {
         column-count: 2;
     }
-
-
 }
-    
-    
